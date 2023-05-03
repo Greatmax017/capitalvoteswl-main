@@ -1,0 +1,20 @@
+.topbanner {
+	width: 100vw;
+	min-height: 20px;
+	font-size: 0.875rem;
+	text-align: center;
+	padding: 0.6rem;
+	background-color: #ffe1e1;
+	background-image: linear-gradient(
+		90.16deg,
+		#ffe1e1 40.95%,
+		rgba(255, 236, 236, 0.85) 63.02%
+	);
+	color: #333;
+}
+
+@media screen and (max-width: 720px) {
+	.topbanner {
+		font-size: 0.675rem;
+	}
+}

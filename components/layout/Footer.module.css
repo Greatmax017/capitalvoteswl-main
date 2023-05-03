@@ -1,0 +1,170 @@
+.footer {
+	padding: 48px;
+	width: 100%;
+	height: max-content;
+	border-color: var(--bg-color);
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footerText {
+	align-self: center;
+	margin-top: 8px;
+	color: #6B66DC;
+
+}
+
+.footerIcons {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	margin-right: 132px;
+}
+
+.footerIcons button {
+	background-color: rgba(117, 63, 246, 0.1);
+	border: none;
+	padding: 4px 16px;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.appleText,
+.googleplayText {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.primary {
+	font-family: inherit;
+	font-weight: 200;
+	font-size: 12px;
+	color: #6B66DC;
+}
+
+.secondary {
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 12px;
+	color: #753ff6;
+}
+
+@media screen and (max-width: 1600px) {
+	.footerIcons button {
+		background-color: rgba(117, 63, 246, 0.1);
+		border: none;
+		padding: 8px 16px;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 12px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.footer {
+		padding: 24px;
+	}
+
+	.footerIcons button {
+		background-color: rgba(117, 63, 246, 0.1);
+		border: none;
+		padding: 0 12px;
+		border-radius: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1px;
+		cursor: pointer;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+	.footerIcons {
+		margin: 0 auto 24px;
+	}
+
+	.appleText,
+	.googleplayText {
+		flex-direction: column;
+		gap: 5px;
+		padding: 6px 12px;
+	}
+
+	.primary,
+	.secondary {
+		font-size: 12px;
+		font-weight: 600;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.footerIcons button {
+		background-color: rgba(117, 63, 246, 0.1);
+		border: none;
+		padding: 0 12px;
+		border-radius: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
+		cursor: pointer;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	.footerIcons {
+		flex-direction: column;
+		align-items: center;
+
+		gap: 16px;
+		margin: 0 auto 32px;
+	}
+
+	.appleText,
+	.googleplayText {
+		flex-direction: row;
+		gap: 12px;
+		padding: 16px;
+	}
+
+	.primary,
+	.secondary {
+		font-size: 16px;
+		font-weight: 600;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.footer {
+		padding: 24px;
+	}
+
+	.footerIcons {
+		flex-direction: column;
+		align-items: center;
+
+		gap: 12px;
+		margin: 0 auto 24px;
+	}
+
+	.primary,
+	.secondary {
+		font-size: 12px;
+		font-weight: 600;
+	}
+}

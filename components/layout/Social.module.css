@@ -1,0 +1,21 @@
+.socialIcon {
+	background: rgba(255, 255, 255, 0.1);
+	width: 57px;
+	height: 57px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+
+.socialIcon:hover {
+	background-color: #9747ff;
+}
+
+@media screen and (max-width: 350px) {
+	.socialIcon {
+		width: 40px;
+		height: 40px;
+	}
+}
